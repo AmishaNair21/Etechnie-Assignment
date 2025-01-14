@@ -8,9 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      sans: ['var(--font-inter)'],
       colors: {
+        customPurple: "#5E29BA",
         background: "var(--background)",
         foreground: "var(--foreground)",
+       
       },
     },
   },
