@@ -1,0 +1,118 @@
+var logoImgUrl = window.logoImgUrl;
+
+document.addEventListener("DOMContentLoaded", function () {
+  const isSh = window.location.hostname.match(/(stubhub)/g);
+
+  // Clear the current html body and show browser upgrade prompt
+  const style = document.createElement("style");
+style.innerHTML = `
+    #unsupported-container {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 5px;
+    }
+    #unsupported-container h1 {
+                font-size: 2em;
+                font-weight: bold;
+                margin-top: 20px;
+                color: #000;
+            }
+    #message {
+        font-size: 1.25em;
+        margin-top: 10px;
+    }
+    #download-heading {
+        font-size: 1.5em; 
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    #unsupported-list {
+        list-style: none;
+        padding: 0;
+    }
+    #unsupported-list li {
+        display: inline;
+        margin: 0 5px;
+    }
+    #unsupported-list a {
+        color: blue;
+        text-decoration: underline;
+    }
+ 
+    .language-section {
+        margin-bottom: 30px;
+    }
+`;
+  document.head.appendChild(style);
+
+  document.body.innerHTML = `
+   <div id="unsupported-container">
+              <div style="text-align: center; padding: 20px;">
+                 <img src="${logoImgUrl}" alt="${isSh ? "StubHub Logo" : "viagogo Logo"}" style="height: 90px;">
+              </div>
+              <h1>Unsupported browser version</h1>
+             <div class="language-section">
+                         <p id="message">To continue using our site, please update to a newer version or switch to a compatible browser.</p>
+                         <h6 id="download-heading">Download:</h6>
+                         <ul id="unsupported-list">
+                             <li><a href="https://www.google.com/chrome/">Chrome</a> | </li>
+                             <li><a href="https://support.apple.com/102665">Safari</a> | </li>
+                             <li><a href="https://www.microsoft.com/edge/download">Edge</a> | </li>
+                             <li><a href="https://www.mozilla.org/firefox">Firefox</a></li>
+                         </ul>
+                     </div>
+             
+                     <!-- Spanish (Mexico) -->
+                     <div class="language-section">
+                         <p id="message">Para continuar usando nuestro sitio, actualice a una versión más reciente o cambie a un navegador compatible.</p>
+                         <h6 id="download-heading">Descargar:</h6>
+                         <ul id="unsupported-list">
+                             <li><a href="https://www.google.com/chrome/">Chrome</a> | </li>
+                             <li><a href="https://support.apple.com/102665">Safari</a> | </li>
+                             <li><a href="https://www.microsoft.com/edge/download">Edge</a> | </li>
+                             <li><a href="https://www.mozilla.org/firefox">Firefox</a></li>
+                         </ul>
+                     </div>
+             
+                     <!-- Portuguese (Brazil) -->
+                     <div class="language-section">
+                         <p id="message">Para continuar usando nosso site, atualize para uma versão mais recente ou mude para um navegador compatível.</p>
+                         <h6 id="download-heading">Baixar:</h6>
+                         <ul id="unsupported-list">
+                             <li><a href="https://www.google.com/chrome/">Chrome</a> | </li>
+                             <li><a href="https://support.apple.com/102665">Safari</a> | </li>
+                             <li><a href="https://www.microsoft.com/edge/download">Edge</a> | </li>
+                             <li><a href="https://www.mozilla.org/firefox">Firefox</a></li>
+                         </ul>
+                     </div>
+             
+                     <!-- German -->
+                     <div class="language-section">
+                         <p id="message">Um unsere Seite weiterhin zu nutzen, aktualisieren Sie bitte auf eine neuere Version oder wechseln Sie zu einem kompatiblen Browser.</p>
+                         <h6 id="download-heading">Herunterladen:</h6>
+                         <ul id="unsupported-list">
+                             <li><a href="https://www.google.com/chrome/">Chrome</a> | </li>
+                             <li><a href="https://support.apple.com/102665">Safari</a> | </li>
+                             <li><a href="https://www.microsoft.com/edge/download">Edge</a> | </li>
+                             <li><a href="https://www.mozilla.org/firefox">Firefox</a></li>
+                         </ul>
+                     </div>
+             
+                     <!-- French -->
+                     <div class="language-section">
+                         <p id="message">Pour continuer à utiliser notre site, veuillez mettre à jour vers une version plus récente ou passer à un navigateur compatible.</p>
+                         <h6 id="download-heading">Télécharger :</h6>
+                         <ul id="unsupported-list">
+                             <li><a href="https://www.google.com/chrome/">Chrome</a> | </li>
+                             <li><a href="https://support.apple.com/102665">Safari</a> | </li>
+                             <li><a href="https://www.microsoft.com/edge/download">Edge</a> | </li>
+                             <li><a href="https://www.mozilla.org/firefox">Firefox</a></li>
+                         </ul>
+                     </div>
+
+
+
+               </div>
+          `;
+});
