@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { CarouselSpacing } from "@/components/Card";
-import Footer from "@/components/Footer";
+
 import HeroBanner from "@/components/HeroBanner";
 import Navbar from "@/components/Navbar";
 import { CiCalendar } from "react-icons/ci";
@@ -73,7 +73,7 @@ export default function Home() {
   </div>
   <hr className="mt-14"/>
 </footer>
-<Footer/>
+
 </div>
 
 
