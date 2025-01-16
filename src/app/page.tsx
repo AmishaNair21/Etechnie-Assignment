@@ -1,12 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { CarouselSpacing } from "@/components/Card";
-
 import HeroBanner from "@/components/HeroBanner";
 import Navbar from "@/components/Navbar";
 import { CiCalendar } from "react-icons/ci";
 import { FaLocationArrow } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
-
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -42,8 +40,8 @@ export default function Home() {
 </div>
 
 {/* upcoming events */}
-<div className=" mt-16 h-60 bg-red-700">
-  <CarouselSpacing/>
+<div className=" mt-16 h-60">
+
 </div>
 </div>
 
@@ -61,18 +59,7 @@ export default function Home() {
   <img src="/images/qr.webp" className="size-24" alt="qr-code"/>
 </div>
 </div>
-
-<footer className=" w-full mt-10">
-<div className="flex-col justify-center text-center items-center">
-<p className="font-bold text-md pb-3">Get hot events and deals delivered straight to your inbox</p>
-<div>
-  <input type="text" placeholder="Email Address" className="text-md border-b py-3 px-4 mx-5 text-gray-600"/>
-  <button className="h-12 w-32 border rounded-lg  border-customPurple text-customPurple font-normal hover:bg-[#EEE0FF]">Join The List</button>
-</div>
-<p className="text-gray-500 py-5">By signing up, you acknowledge and accept our <a href="#" className="text-[#08A1E0]">privacy policy</a> and consent to receiving emails. </p>
-  </div>
-  <hr className="mt-14"/>
-</footer>
+<Footer/> 
 
 </div>
 

@@ -19,23 +19,23 @@ const Navbar = () => {
           className="h-20 w-20  md:h-24 md:w-24"
         />
         <ul className='md:gap-5 text-sm hidden md:flex justify-center items-center'>
-          <li>Sports</li>
-          <li>Concerts</li>
-          <li>Theater</li>
-          <li>Festivals</li>
-          <li>Cities</li>
+          <li><a href="#" className="hover:text-customPurple">Sports</a></li>
+          <li><a href="#" className="hover:text-customPurple">Concerts</a></li>
+          <li><a href="#" className="hover:text-customPurple">Theater</a></li>
+          <li><a href="#" className="hover:text-customPurple">Festivals</a></li>
+          <li><a href="#" className="hover:text-customPurple">Cities</a></li>
         </ul>
       </div>
 
       {/* Right Section */}
       <div className='flex items-center gap-8'>
         <ul className='md:gap-5 text-sm hidden md:flex justify-center items-center'>
-          <li>Gift Cards</li>
-          <li>Explore</li>
-          <li>Sell</li>
-          <li>Favorites</li>
-          <li>My Tickets</li>
-          <li>Sign In</li>
+          <li><a href="#" className="hover:text-customPurple">Gift Cards</a></li>
+          <li><a href="#" className="hover:text-customPurple">Explore</a></li>
+          <li><a href="#" className="hover:text-customPurple">Sell</a></li>
+          <li><a href="#" className="hover:text-customPurple">Favorites</a></li>
+          <li><a href="#" className="hover:text-customPurple">My Tickets</a></li>
+          <li><a href="#" className="hover:text-customPurple">Sign In</a></li>
         <li>  </li>
         </ul>
         <FaUserCircle size={30} color='#5E29BA'/>
