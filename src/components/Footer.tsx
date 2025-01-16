@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div>
         
-<footer className=" w-full mt-10">
+<footer className=" w-full mt-10 px-10">
 <div className="flex-col justify-center text-center items-center">
 <p className="font-bold text-md pb-3">Get hot events and deals delivered straight to your inbox</p>
 <div>
